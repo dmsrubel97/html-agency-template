@@ -1,0 +1,44 @@
+// home page style
+.blog-post-area {
+   .blog-post-title-link {
+      &:hover {
+         color: var(--app-color-theme) !important;
+      }
+   }
+
+   h2 {
+      font-size: 25px;
+      font-weight: 600;
+      line-height: 25px;
+   }
+}
+
+// blog page style
+.blog-page-feature {
+   background-image: url('../img/bg/bg-blog-feature.jpg');
+   background-attachment: fixed;
+   background-position: center center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.blog-post-content {
+   h2 {
+      line-height: 15px;
+
+      a {
+         font-size: 25px;
+
+         &:hover {
+            color: var(--app-color-theme) !important;
+         }
+      }
+   }
+
+   .page-item.active .page-link {
+      z-index: 3;
+      color: var(--app-color-white);
+      background-color: var(--app-color-theme);
+      border-color: var(--app-color-theme);
+   }
+}
