@@ -17,4 +17,46 @@ You can see a live preview of the template [here](https://www.linkedin.com/in/vx
 - Clone the repository to your local machine:
 
 ```bash
+git clone https://github.com/your-username/agency-template.git
+```
+- Open the project directory in your code editor.
+
+- Customize the template by modifying HTML, CSS, and JavaScript files according to your agency's needs.
+
+- Preview the changes locally by opening the index.html file in your browser.
+
+- Push your customizations to your GitHub repository:
+
+```bash
+git add .
+git commit -m "Customized the template"
+git push
+```
+### Contributing
+If you want to contribute to this project, please follow these steps:
+
+- Fork this repository to your GitHub account.
+
+- Create a new branch for your feature or bug fix:
+
+```bash
+git checkout -b feature-name
+```
+- Make your changes and test them.
+
+- Commit your changes:
+
+```bash
+git commit -m "Added feature XYZ"
+```
+- Push your changes to your fork on GitHub:
+
+```bash
 git push origin feature-name
+```
+- Create a pull request on this repository.
+
+### Issues
+
+If you encounter any issues or have suggestions for improvements, please open an issue on the GitHub repository.
+
