@@ -16,6 +16,5 @@ You can see a live preview of the template [here](https://www.linkedin.com/in/vx
 ### Installation and Usage
 - Clone the repository to your local machine:
 
-```markdown
 ```bash
 git push origin feature-name
