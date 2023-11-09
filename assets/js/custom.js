@@ -7,7 +7,7 @@
    class AppColor {
       color() {
          return {
-            theme: '#5e17eb'
+            theme: '#E02810'
          }
       }
    }

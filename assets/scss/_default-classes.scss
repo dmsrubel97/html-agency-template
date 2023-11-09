@@ -7,9 +7,9 @@
    }
 
    &:hover {
-      border-color: var(--app-color-theme) !important;
-      background-color: transparent !important;
-      color: var(--app-color-theme) !important;
+      border-color: var(--app-color-theme-deep) !important;
+      background-color: var(--app-color-theme-deep) !important;
+      color: var(--app-color-dark) !important;
    }
 }
 
@@ -21,9 +21,21 @@
    font-size: 40px;
 }
 
-.text-theme-hover:hover,
+
 .text-theme {
    color: var(--app-color-theme) !important;
+}
+
+.text-theme-hover {
+   &:hover {
+      color: var(--app-color-theme) !important;
+   }
+}
+
+[class*="text-"].text-theme-hover {
+   &:hover {
+      color: var(--app-color-theme) !important;
+   }
 }
 
 .bg-theme {
@@ -61,7 +73,7 @@
    box-shadow: 0 0 0 .2rem var(--app-color-theme-alpha) !important;
 }
 
-.text-midium {
+.text-medium {
    font-size: 20px;
 }
 
