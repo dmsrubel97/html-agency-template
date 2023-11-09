@@ -1,0 +1,10 @@
+.apply-form-bg,
+.job-item {
+   &:hover {
+      background-color: var(--app-color-job-item-hover);
+   }
+}
+
+.apply-form-control {
+   min-height: 200px;
+}

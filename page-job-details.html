@@ -163,7 +163,7 @@
    <section class="clearfix blog-page-feature text-light">
       <div class="overlay py-5">
          <div class="container py-5">
-            <h2 class="text-center text-capitalize">available job</h2>
+            <h2 class="text-center text-capitalize">Job Descriptions</h2>
          </div>
       </div>
    </section>
@@ -173,46 +173,82 @@
    <section class="clearfix py-5">
       <div class="container">
          <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-8 mb-5 mb-md-0">
 
-               <!-- single job item -->
-               <script>
-                  for (let i = 1; i <= 12; i++) {
+               <!-- job details -->
+               <article class="border p-3 shadow mb-4">
+                  <h3 class="font-weight-bold text-medium">
+                     <a href="./page-job-details.html" class="text-dark text-decoration-none text-theme-hover">I need a
+                        web Developer for
+                        creating my website.</a>
+                  </h3>
+                  <div class="small d-inline-flex align-items-center mb-4">
+                     <i class="fa-solid fa-tag"></i>
+                     <a href="javascript:void(0)" class="ml-1 text-dark text-decoration-none text-theme-hover">Web
+                        Development</a>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed dolor impedit corrupti alias culpa
+                     quo suscipit velit odio rem quaerat, vero iste vel incidunt ipsum, perferendis obcaecati aspernatur
+                     facilis excepturi! Maiores, pariatur voluptatibus laboriosam laudantium optio nam porro blanditiis
+                     placeat itaque ducimus culpa, tenetur a? Error obcaecati quos minima eum eligendi ex ab a non.</p>
 
-                     document.write(`
-                        <article class="border p-3 job-item">
-                           <h3 class="font-weight-bold text-medium">
-                              <a href="./page-job-details.html" class="text-dark text-decoration-none text-theme-hover">I need a
-                                 web Developer for
-                                 creating my website.</a>
-                           </h3>
-                           <div class="small d-inline-flex align-items-center mb-2">
-                              <i class="fa-solid fa-tag"></i>
-                              <a href="javascript:void(0)" class="ml-1 text-dark text-decoration-none text-theme-hover">Web
-                                 Development</a>
-                           </div>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque vel iusto nostrum velit deserunt
-                              commodi expedita mollitia autem, ullam delectus aliquid ab accusamus nesciunt recusandae!</p>
+                  <h5 class="font-weight-bold text-medium mt-4">Requirement</h5>
+                  <ul>
+                     <li>Responsive Design: Ensure the website is accessible and looks good on various devices and
+                        screen sizes.</li>
+                     <li>Browser Compatibility: Test and optimize the website for compatibility with major browsers
+                        (Chrome, Firefox, Safari, Edge).</li>
+                     <li>User-friendly Navigation: Implement an intuitive navigation structure for a seamless user
+                        experience.</li>
+                     <li>Page Load Speed: Optimize and enhance website performance to ensure fast loading times.</li>
+                     <li>Security Measures: Implement security best practices to protect against common web
+                        vulnerabilities.</li>
+                  </ul>
 
-                           <a href="./page-job-details.html" target="_blank" class="btn-sm btn border bg-light-gray px-4">Apply</a>
-                        </article>
-                     `);
-                  }
-               </script>
+                  <h5 class="font-weight-bold text-medium mt-4">Responsibility</h5>
 
-               <!-- single job item -->
+                  <ul class="mb-5 d-block">
+                     <li>Transparent Communication: Foster open and honest communication within the company and with
+                        stakeholders.</li>
+                     <li>Employee Development: Provide opportunities for professional growth and skill development for
+                        all team members.</li>
+                     <li>Workplace Diversity and Inclusion: Create a diverse and inclusive work environment that values
+                        and respects every individual.</li>
+                     <li>Environmental Sustainability: Implement eco-friendly practices and initiatives to minimize the
+                        company's environmental impact.</li>
+                     <li>Compliance with Regulations: Ensure adherence to all relevant laws, regulations, and ethical
+                        standards in the industry.</li>
+                  </ul>
+               </article>
+               <!-- job details end -->
 
-               <ul class="pagination justify-content-center">
-                  <li class="page-item disabled">
-                     <a class="page-link" href="javascript:void(0)" tabindex="-1">Prev</a>
-                  </li>
-                  <li class="page-item"><a class="page-link" href="javascript:void(0)">1</a></li>
-                  <li class="page-item active"><a class="page-link" href="javascript:void(0)">2</a></li>
-                  <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
-                  <li class="page-item">
-                     <a class="page-link" href="javascript:void(0)">Next</a>
-                  </li>
-               </ul>
+               <!-- apply form -->
+
+               <div class="border p-3 p-lg-4 shadow bg-light-gray rounded">
+                  <h3 class="font-weight-bold text-medium text-capitalize">Submit your proposal</h3>
+                  <form action="javascript:void" class="py-3">
+                     <div class="row">
+                        <div class="col-md-6 mb-4">
+                           <label for="name">Name</label>
+                           <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="col-md-6 mb-4">
+                           <label for="email">Email Address</label>
+                           <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="col-12 mb-4">
+                           <label for="proposal-text">Cover Letter</label>
+                           <textarea id="proposal-text" class="form-control apply-form-control"></textarea>
+                        </div>
+                        <div class="col-12">
+                           <input type="submit" value="Submit Proposal" class="btn btn-theme px-5 btn-lg">
+                        </div>
+
+                     </div>
+                  </form>
+               </div>
+               <!-- apply form end -->
+
 
             </div>
             <div class="col-md-4 col-lg-3 offset-lg-1">
