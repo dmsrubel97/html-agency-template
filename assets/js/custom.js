@@ -67,11 +67,18 @@
                }
             });
 
-         // add angle down icon to submenu link
          $('.menu')
-            .find('li.has-submenu')
-            .children('a').addClass('menu-has-submenu-link')
+            .children('li.has-submenu')
+            .children('a')
+            .addClass('menu-has-submenu-link')
             .append('<i class="fa-solid fa-angle-down"></i>');
+
+         $('.menu')
+            .children('li.has-submenu')
+            .find('li.has-submenu')
+            .children('a')
+            .addClass('menu-has-submenu-link')
+            .append('<i class="fa-solid fa-angle-right"></i>')
 
       }
 
