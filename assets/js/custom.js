@@ -27,7 +27,7 @@
 
       header() {
          // clone main menu and inser to responsive mobile menu
-         $('.menu').clone().attr('class', 'm-menu').appendTo('.responsive-mobile-menu');
+         $('.menu').clone().attr('class', 'm-menu py-3').appendTo('.responsive-mobile-menu');
 
          // menu toggle
          $('.menu-toggle').on('click', function (e) {
@@ -79,6 +79,21 @@
             .children('a')
             .addClass('menu-has-submenu-link')
             .append('<i class="fa-solid fa-angle-right"></i>')
+
+
+         // scroll top fiexed top header
+         $(window).on('scroll', () => {
+            let mainMenu = $('.main-menu');
+            let mainMenuHeight = mainMenu.outerHeight();
+            let scrollTopHeight = $(window).scrollTop();
+
+            if (scrollTopHeight > mainMenuHeight) {
+               mainMenu.addClass('fixed-top')
+            } else {
+               mainMenu.removeClass('fixed-top')
+            }
+
+         });
 
       }
 
@@ -184,10 +199,8 @@
 
             if (height > 300) {
                $('.scroll-to-top').addClass('d-inline-flex');
-               console.log('done');
             } else {
                $('.scroll-to-top').removeClass('d-inline-flex');
-               console.log('none');
             }
          }
 
