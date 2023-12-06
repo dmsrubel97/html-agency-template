@@ -84,3 +84,16 @@
 .bg-light-gray {
    background-color: var(--app-color-light-gray);
 }
+
+.bg-country-list {
+   background: var(--app-bg-country-list);
+}
+
+.bg-country-box {
+   background: var(--app-bg-country-box);
+}
+
+.flag-width {
+   max-width: 150px;
+   margin: 0 auto;
+}
