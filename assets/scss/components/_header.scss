@@ -73,6 +73,17 @@
                .submenu {
                   top: -15px;
                   left: 100%;
+
+                  >li>a {
+                     display: inline-flex;
+                     align-items: center;
+
+                     img {
+                        width: 20px;
+                        margin-right: 10px;
+                        border-radius: 2px;
+                     }
+                  }
                }
             }
 
@@ -109,6 +120,21 @@
          padding: 15px;
          box-shadow: none !important;
          text-decoration: none;
+
+         .submenu {
+            >li {
+               >a {
+                  display: inline-flex;
+                  align-items: center;
+
+                  img {
+                     width: 20px;
+                     border-radius: 2px;
+                     margin-right: 10px;
+                  }
+               }
+            }
+         }
       }
 
       a {
