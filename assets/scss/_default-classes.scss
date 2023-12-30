@@ -116,3 +116,18 @@
    line-height: 18px;
    text-align: center;
 }
+
+@media(min-width: 1366px) {
+   .container {
+      max-width: 1320px;
+   }
+}
+
+.btn-subscribe-us {
+   background-color: var(--app-color-theme) !important;
+
+   &:hover {
+      background-color: var(--app-color-theme-deep) !important;
+      color: var(--app-color-dark) !important;
+   }
+}

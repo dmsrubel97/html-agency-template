@@ -1,4 +1,7 @@
 footer.footer-area {
+
+   background-color: var(--app-color-light-gray);
+
    .scroll-to-top {
       position: fixed;
       display: none;
@@ -27,5 +30,60 @@ footer.footer-area {
       // background-repeat: no-repeat;
       // background-position: center center;
       background-color: var(--app-color-light-gray);
+   }
+
+   .footer-down-area {
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
+      border-top: 2px solid var(--app-color-theme);
+   }
+
+   a.footer-logo {
+      display: inline-flex;
+      max-width: 150px;
+   }
+
+   .footer-social {
+      a {
+         display: inline-flex;
+         justify-content: center;
+         align-items: center;
+         height: 30px;
+         width: 30px;
+         color: var(--app-color-theme) !important;
+         border: 1px solid var(--app-color-theme);
+         border-radius: 4px;
+      }
+
+      a.facebook {
+         background-color: #2D71BE;
+         border-color: #2D71BE;
+         color: white !important;
+      }
+
+      a.twitter {
+         background-color: #4DA6E9;
+         border-color: #4DA6E9;
+         color: white !important;
+      }
+
+      a.instagram {
+         background-color: #A50AEA;
+         border-color: #A50AEA;
+         color: white !important;
+      }
+
+      a.reddit {
+         background-color: #F74300;
+         border-color: #F74300;
+         color: white !important;
+      }
+
+      a.youtube {
+         background-color: #F60002;
+         border-color: #F60002;
+         color: white !important;
+      }
    }
 }
